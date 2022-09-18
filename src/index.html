@@ -12,6 +12,28 @@
 
 <body>
   <div class="page">
+    <!--Modal-container-publicação-->
+    <div class="container-publication">
+      <form id="form">
+        <label for="post">
+          <div class="post-title">
+            <h1>Criar Publicação</h1>
+            <button>X</button>
+          </div>
+          <div class="post-infor">
+            <img src="./img/107922389.jpg" alt="">
+            <p>Abner Santos</p>
+          </div>
+        </label>
+        <textarea placeholder="No que você está pensando?" name="post" id="input" cols="30" rows="10"></textarea>
+        <div id="msg">
+        </div>
+        <button class="btn-publish" type="submit">Publicar</button>
+      </form>
+    </div>
+
+
+
     <!--------Coluna-1---------->
     <div class="col-1">
       <ul>
@@ -20,6 +42,11 @@
           <a href="#"><img
               src="https://static.wixstatic.com/media/5b90eb_39e0368479ed4e5887e812c2b10cd97e~mv2.png/v1/fill/w_145,h_62,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/editables%20campinho%20digital-04.png"
               alt=""></a>
+        </li>
+        <li class="image-perfil">
+          <a href="#"><img src="./img/107922389.jpg" alt="imagem de perfil do usuario"></a>
+          <h2>Abner Santos</h2>
+          <p>Desenvolvedor web</p>
         </li>
         <li>
           <a href="#">Inicio</a>
@@ -43,23 +70,31 @@
     </div>
     <!--------Coluna-2-central---------->
     <div class="col-2">
-      <header>
-        <h1>Social Media App</h1>
-      </header>
-      <div class="container">
-        <div class="left">
-          <form id="form">
-            <label for="post"> Escreva seu post aqui</label>
-            <textarea name="post" id="input" cols="30" rows="10"></textarea>
-            <div id="msg"></div>
-            <button type="submit">Post</button>
-
-
-          </form>
+      <div class="public-infor">
+        <div class="public-infor-content">
+          <img src="./img/107922389.jpg" alt="imagem perfil">
+          <button>O que você está pensando?</button>
         </div>
+      </div>
+      <div class="container">
         <div class="right">
-          <h3>Your posts here</h3>
+          <h3>Feed</h3>
           <div id="posts">
+            <div>
+              <div class="poist-perfil-content">
+                <img src="./img/107922389.jpg" alt="imagem de perfil de abner">
+                <div class="pois-perfil-descrition">
+                  <h2>Abner Henrique</h2>
+                  <p>desenvolvedor web</p>
+                </div>
+              </div>
+              <p>${data.text}</p>
+              <span>
+                <i onClick=deletePost(this) class="fas fa-trash-alt"></i></span>
+              <span>
+                <i onClick=editPost(this) class="fas fa-edit"></i>
+              </span>
+            </div>
           </div>
           <div>
             <p></p>
@@ -69,6 +104,11 @@
         </div>
       </div>
     </div>
+
+
+
+
+
     <!--------Coluna-3---------->
     <div class="col-3">
       <ul>
