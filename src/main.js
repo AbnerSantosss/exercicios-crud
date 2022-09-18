@@ -28,14 +28,26 @@ let acceptData = () => {
 
 function createPosts() {
   posts.innerHTML += `
-  <div>
-    <p>${data.text}</p>
-     <span>
-     <i onClick=deletePost(this) class="fas fa-trash-alt"></i></span>
-     <span>
-     <i onClick=editPost(this) class="fas fa-edit"></i>
-     </span>
-  </div>
+        <div class="right">
+              <div class="post-perfil-content">
+                <img src="./img/107922389.jpg" alt="imagem de perfil de abner">
+                <div class="post-perfil-descrition">
+                  <h2>Abner Henrique</h2>
+                  <p>desenvolvedor web</p>
+                </div>
+                <div class="post-opstions-action">
+                  <span>
+                    <i onClick=deletePost(this) class="fas fa-trash-alt"></i></span>
+                  <span>
+                    <i onClick=editPost(this) class="fas fa-edit"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="post-text-content">
+                <p>${data.text} wswswswswsw</p>
+              </div>
+
+            </div>
   `
   input.value = ''
 }
