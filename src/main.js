@@ -37,14 +37,14 @@ function createPosts() {
                 </div>
                 <div class="post-opstions-action">
                   <span>
-                    <i onClick=deletePost(this) class="fas fa-trash-alt"></i></span>
+                    <i onclick=deletePost(this) class="fas fa-trash-alt"></i></span>
                   <span>
-                    <i onClick=editPost(this) class="fas fa-edit"></i>
+                    <i onclick=editPost(this) class="fas fa-edit"></i>
                   </span>
                 </div>
               </div>
               <div class="post-text-content">
-                <p>${data.text} wswswswswsw</p>
+                <p>"${data.text}"</p>
               </div>
 
             </div>
@@ -53,7 +53,11 @@ function createPosts() {
 }
 
 function deletePost(id) {
-  id.parentElement.parentElement.remove()
+  let isOK = confirm('Deseja Realmente deletar sua publicação?')
+  if (isOK) {
+    id.parentElement.parentElement.parentElement.parentElement.remove()
+  }
+  console.log('esta pegando')
 }
 
 function editPost(id) {

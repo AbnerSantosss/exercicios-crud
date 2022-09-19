@@ -18,6 +18,7 @@ body{
   background-color: black;
   color: var(--color-white);
   font-size: 1.6rem;
+  
 }
   
 
@@ -45,9 +46,11 @@ a {
   margin: 0 auto;
   justify-content: space-around;
   height: 100vh;
-  position: relative;
   margin-bottom: 150px;
+  position: relative;
+ 
 }
+ 
 
 
 .col-1{
@@ -68,13 +71,13 @@ a {
 }
 
 
-/*===============Col-1=====================*/
+/*===============================Col-1========================*/
 
-.col-1 ul{
+.col-1 ul {
   display: flex;
   flex-direction: column;
-  gap: 54px;
-  
+  gap: 14px;
+
 }
 
 
@@ -82,7 +85,22 @@ a {
   color: var(--color-white);
   font-weight: 700;
   font-size: 22px;
+
 }
+
+
+.col-1 ul li {
+  transition: 0.4s;
+  width: min-content;
+  padding: 10px;
+  border-radius: 9px;
+}
+
+
+.col-1 ul li:hover{
+    background-color: rgba(204, 204, 204, 0.285);
+  }
+
 
 
 .col-1 ul li button {
@@ -94,7 +112,10 @@ a {
   border-radius: 40px;
   cursor: pointer;
   transition: 0.3s;
+  width: 190px;
+  border: none;
 }
+
 
 .col-1 ul li button:hover{
  background-color: rgb(0 99 165);
@@ -145,10 +166,7 @@ color: rgb(185, 180, 180);
 
 
 /*===============Col-2-Central=====================*/
-.container{
-  width: 100%;
-  position: relative;
-}
+
 
 
 .col-2 {
@@ -156,100 +174,39 @@ color: rgb(185, 180, 180);
   width: 500px;
   display: flex;
   flex-direction: column;
-
-}
-
-
-.public-infor{
-  padding: 10px;
-  border: 1px solid var(--color-white);
-}
-
-
-.public-infor-content{
-gap: 18px;
-  display: flex;
-}
-
-
-
-
-.public-infor-content img{
-  width: 54px;
-  border-radius: 50%;
-}
-
-.public-infor-content button{
-  width: 80%;
-  cursor: pointer;
-  border-radius: 24px;
-  background-color: transparent;
-  border: 1px solid var(--color-white); 
-  color: var(--color-white);
-  transition: 0.5s;
-  
-}
-.public-infor-content button:hover{
-  background-color: var(--color-blue);
+  position: relative;
 }
 
 
 /*========================Create-publication==============*/
+
+
 #form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  background-color: rgb(29, 29, 29);
   padding: 10px;
-  position: absolute;
-  top: 62px;
- 
+  border: 1px solid white;
 }
 
 
-.container-publication{
-  width: 100%;
+.form-content-infor {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  gap: 42px;
   align-items: center;
-  position: absolute;
-  height: 125vh;
-  background: #e6e6e670;
-  display: none;
-}
-  
-  
-
-
-.post-title{
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid var(--color-white);
-  padding-bottom: 10px;
 }
 
 
-.post-title h1{
-  font-size: 2.6rem;
-  font-family: inherit;
-  font-weight: 700;
-}
-
-
-.post-title button {
-  cursor: pointer;
-  width: min-content;
-  background-color: transparent;
-  border: none;
-  color: rgb(169 166 166);
-  font-size: 24px;
-  transition: 0.2s;
-}
-
-.post-title button:hover{
-  color: var(--color-white);;
-
+.form-content-infor textarea {
+  color: black;
+  background: var(--color-white);
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-family: 'Verdana';
+  font-size: 0.875em;
+  resize: none;
+  border-radius: 24px;
+  width: 100%;
+  width: 343px; 
+  height: 46px;
+  text-align: start;
 }
 
 
@@ -262,24 +219,31 @@ gap: 18px;
 
 .post-infor img{
   border-radius: 50%;
-  width: 36px;
+  width: 59px;
   margin-top: 10px;
+  margin-left: 11px;
+}
+
+
+.form-content-button {
+  margin-right: 27px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
 }
 
 
 .btn-publish {
-  width: 147px;
   cursor: pointer;
   border-radius: 24px;
   background-color: var(--color-blue);
   border: 1px solid var(--color-white);
   color: var(--color-white);
-  margin: 0 auto;
   padding: 10px;
-  font-size: 17px;
+  font-size: 15px;
   transition: 0.3s;
-}
   
+}
 
 
 .btn-publish:hover{
@@ -287,23 +251,15 @@ gap: 18px;
 }
 
 
-#form textarea {
-  color: black;
-  background: var(--color-white);
-  border: 1px solid #ccc;
-  padding: 10px;
-  font-family: 'Verdana';
-  font-size: 0.875em;
-  resize: none
-}
-
-
 /*========================Feed-publication==============*/
+
 .right {
   padding: 10px;
-  border: 1px solid white;
+  border: 2px solid white;
   margin-top: 20px;
+  background-color: rgb(30, 30, 30);
 }
+
 
 .post-perfil-content {
   display: flex;
@@ -313,6 +269,7 @@ gap: 18px;
   border-bottom: 1px solid var(--color-white);
   position: relative;
 }
+
 
 .post-perfil-content img{
   width: 45px;
@@ -325,9 +282,6 @@ gap: 18px;
   
 }
 
-
-
-
 .post-perfil-descrition p {
   font-size: 11px;
   letter-spacing: 1px;
@@ -335,47 +289,51 @@ gap: 18px;
 
 
 /*---EDIT-DELETE----*/
-.post-opstions-action{
-margin-left: 257px;
-display: flex;
-gap: 20px;
-position: absolute;
-right: 10px;
+
+.post-opstions-action {
+  margin-left: 257px;
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  right: 10px;
 }
 
-.post-opstions-action span{
+.post-opstions-action span {
   cursor: pointer;
   transition: 0.3s;
 }
 
-.post-opstions-action span:hover{
+.post-opstions-action span:hover {
   color: var(--color-blue);
 }
 
 
-
-
 /*---POST-CONTENT-TEXT----*/
+/*--CONTAINER ONDE AS POSTAGENS SÃO FEITAS--*/
 
-.post-text-content{
+.post-text-content {
   padding: 10px;
 }
 
-
-/*===============Col-3=====================*/
+/*=================================COL-3=====================================*/
 
 
 .col-3 {
   width: 333px;
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
 }
+
+/*---------NOTICES------------*/
+/*-----Coluna de noticias-0---*/
 
 .notices{
   background-color: #202327;
   border-radius: 9px;
   padding: 20px;
 }
-  
 
 
 .notices h1{
@@ -391,6 +349,7 @@ right: 10px;
   transition: 0.3s;
 }
 
+
 .notices li:hover{
   background-color: rgba(204, 204, 204, 0.285);
 }
@@ -398,8 +357,9 @@ right: 10px;
 
 .notices li a{
   display: flex;
- 
+  
 }
+
 
 .img-notices{
   width: 60px;
@@ -407,17 +367,152 @@ right: 10px;
 }
 
 
-
 .notices-text p{
   color: rgb(113, 118, 123);
-
 }
 
-.notices-text h3{
- color: rgb(231, 233, 234);
- font-family: inherit;
-font-size: 17px;
+
+.notices-text h3 {
+  color: rgb(231, 233, 234);
+  font-family: inherit;
+  font-size: 17px;
 }
+
+
+/*---------FOLLW-----------*/
+
+
+.follw {
+  background-color: #202327;
+  border-radius: 9px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  
+}
+
+
+.follw h1 {
+  font-size: 25px;
+  border-bottom: 1px solid var(--color-white);
+  margin-bottom: 15px
+}
+
+
+.follw li {
+  padding: 20px;
+  border-radius: 9px;
+  transition: 0.3s;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+
+.follw li:hover {
+  background-color: rgba(204, 204, 204, 0.285);
+}
+
+
+.follw li a {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+}
+
+
+.btn-follw {
+  font-weight: bold;
+  background-color: #eaeaea;
+  color: black;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  height: 33px;
+  font-size: 13px;
+  border-radius: 28px;
+  transition: 0.5s;
+}
+
+
+.btn-follw:hover{
+  background-color: #ffffff;
+}
+
+
+.img-follw {
+  width: 60px;
+  border-radius: 50%;
+}
+
+
+.follw-text p {
+  color: rgb(113, 118, 123);
+}
+
+
+.follw-text h3 {
+  color: rgb(231, 233, 234);
+  font-family: inherit;
+  font-size: 17px;
+}
+
+
+
+
+  
+
+
+  
+
+  
+  
+ 
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
