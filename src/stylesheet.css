@@ -7,7 +7,7 @@
 :root{
   font-size: 62.5%;
 
-  --color-white: rgb(255, 255, 255);;
+  --color-white: rgb(255, 255, 255);
   
   --color-blue: rgb(29, 155, 240);
 
@@ -39,19 +39,15 @@ a {
 }
 
 
-
 .page{
-  padding: 20px;
+  padding: 2.0rem;
   display: flex;
   margin: 0 auto;
   justify-content: space-around;
   height: 100vh;
-  margin-bottom: 150px;
+  margin-bottom: 15.0rem;
   position: relative;
- 
 }
- 
-
 
 .col-1{
   color: var(--color-white);
@@ -70,13 +66,12 @@ a {
   margin-left: 5px;
 }
 
-
-/*===============================Col-1========================*/
+/*===============================COL-1========================*/
 
 .col-1 ul {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 1.4rem;
 
 }
 
@@ -84,15 +79,14 @@ a {
 .col-1 ul li a{
   color: var(--color-white);
   font-weight: 700;
-  font-size: 22px;
-
+  font-size: 2.2rem;
 }
 
 
 .col-1 ul li {
   transition: 0.4s;
   width: min-content;
-  padding: 10px;
+  padding: 1.0rem;
   border-radius: 9px;
 }
 
@@ -107,12 +101,12 @@ a {
   color: var(--color-white);
   font-weight: 700;
   background-color: var(--color-blue);
-  padding: 15px;
-  font-size: 15px;
-  border-radius: 40px;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  border-radius: 4.0rem;
   cursor: pointer;
   transition: 0.3s;
-  width: 190px;
+  width: 19.0rem;
   border: none;
 }
 
@@ -124,10 +118,10 @@ a {
 
 .image-perfil {
   display: flex;
-  gap: 10px;
-  border-radius: 20px;
+  gap: 1.0rem;
+  border-radius: 2.0rem;
   padding: 3px 9px;
-  border-radius: 26px;
+  border-radius: 2.6rem;
   cursor: pointer;
   transition:  0.5s;
 }
@@ -135,11 +129,10 @@ a {
 .image-perfil:hover{
   background-color: rgba(121, 118, 118, 0.22);
 }
-  
 
 
 .image-perfil img{ 
-  width: 46px;
+  width: 4.6rem;
   border-radius: 50%;
 }
 
@@ -150,46 +143,41 @@ a {
 }
 
 .image-perfil-text h2{
-  font-size: 17px;
+  font-size: 1.7rem;
 
 }
 
 .image-perfil-text p {
-font-size: 15px;
+font-size: 1.5rem;
 letter-spacing: 1px;
 color: rgb(185, 180, 180);
 }
-  
 
 
-
-
-
-/*===============Col-2-Central=====================*/
-
-
+/*==========================COL-2-CENTRAL==============================*/
 
 .col-2 {
   border: 1px solid var(--color-white);
-  width: 500px;
+  width: 50.0rem;
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
 
-/*========================Create-publication==============*/
+/*=====================Create-publication==============================*/
+/*=====================Container de Criação de publicação==============*/
 
 
 #form {
-  padding: 10px;
+  padding: 1.0rem;
   border: 1px solid white;
 }
 
 
 .form-content-infor {
   display: flex;
-  gap: 42px;
+  gap: 4.2rem;
   align-items: center;
 }
 
@@ -198,14 +186,14 @@ color: rgb(185, 180, 180);
   color: black;
   background: var(--color-white);
   border: 1px solid #ccc;
-  padding: 10px;
+  padding: 1.0rem;
   font-family: 'Verdana';
   font-size: 0.875em;
   resize: none;
-  border-radius: 24px;
+  border-radius: 2.4rem;
   width: 100%;
-  width: 343px; 
-  height: 46px;
+  width: 34.3rem; 
+  height: 4.6rem;
   text-align: start;
 }
 
@@ -219,14 +207,14 @@ color: rgb(185, 180, 180);
 
 .post-infor img{
   border-radius: 50%;
-  width: 59px;
-  margin-top: 10px;
-  margin-left: 11px;
+  width: 5.9rem;
+  margin-top: 1.0rem;
+  margin-left: 1.1rem;
 }
 
 
 .form-content-button {
-  margin-right: 27px;
+  margin-right: 2.7rem;
   display: flex;
   justify-content: space-between;
   padding: 5px;
@@ -235,12 +223,12 @@ color: rgb(185, 180, 180);
 
 .btn-publish {
   cursor: pointer;
-  border-radius: 24px;
+  border-radius: 2.4rem;
   background-color: var(--color-blue);
   border: 1px solid var(--color-white);
   color: var(--color-white);
-  padding: 10px;
-  font-size: 15px;
+  padding: 1.0rem;
+  font-size: 1.5rem;
   transition: 0.3s;
   
 }
@@ -251,20 +239,22 @@ color: rgb(185, 180, 180);
 }
 
 
-/*========================Feed-publication==============*/
+/*======================Feed-publication==============*/
+/*======================Feed-publicções===============*/
+
 
 .right {
-  padding: 10px;
+  padding: 1.0rem;
   border: 2px solid white;
-  margin-top: 20px;
+  margin-top: 2.0rem;
   background-color: rgb(30, 30, 30);
 }
 
 
 .post-perfil-content {
   display: flex;
-  gap: 10px;
-  margin-top: 10px;
+  gap: 1.0rem;
+  margin-top: 1.0rem;
   padding: 7px;
   border-bottom: 1px solid var(--color-white);
   position: relative;
@@ -272,30 +262,30 @@ color: rgb(185, 180, 180);
 
 
 .post-perfil-content img{
-  width: 45px;
+  width: 4.5rem;
   border-radius: 50%;
 }
 
 
 .post-perfil-descrition h2{
-  font-size: 14px;
+  font-size: 1.4rem;
   
 }
 
 .post-perfil-descrition p {
-  font-size: 11px;
+  font-size: 1.1rem;
   letter-spacing: 1px;
 }
 
-
 /*---EDIT-DELETE----*/
+/*--Botão edit e delet--*/
 
 .post-opstions-action {
-  margin-left: 257px;
+  margin-left: 25.7rem;
   display: flex;
-  gap: 20px;
+  gap: 2.0rem;
   position: absolute;
-  right: 10px;
+  right: 1.0rem;
 }
 
 .post-opstions-action span {
@@ -311,19 +301,20 @@ color: rgb(185, 180, 180);
 /*---POST-CONTENT-TEXT----*/
 /*--CONTAINER ONDE AS POSTAGENS SÃO FEITAS--*/
 
+
 .post-text-content {
-  padding: 10px;
+  padding: 1.0rem;
 }
 
 /*=================================COL-3=====================================*/
 
 
 .col-3 {
-  width: 333px;
+  width: 33.3rem;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 2.2rem;
 }
 
 /*---------NOTICES------------*/
@@ -332,19 +323,19 @@ color: rgb(185, 180, 180);
 .notices{
   background-color: #202327;
   border-radius: 9px;
-  padding: 20px;
+  padding: 2.0rem;
 }
 
 
 .notices h1{
-  font-size: 25px;
+  font-size: 2.5rem;
   border-bottom: 1px solid var(--color-white);
-  margin-bottom: 15px
+  margin-bottom: 1.5rem;
 }
 
 
 .notices li{
-  padding: 20px;
+  padding: 2.0rem;
   border-radius: 9px;
   transition: 0.3s;
 }
@@ -362,8 +353,8 @@ color: rgb(185, 180, 180);
 
 
 .img-notices{
-  width: 60px;
-  border-radius: 10px;
+  width: 6.0rem;
+  border-radius: 1.0rem;
 }
 
 
@@ -375,17 +366,18 @@ color: rgb(185, 180, 180);
 .notices-text h3 {
   color: rgb(231, 233, 234);
   font-family: inherit;
-  font-size: 17px;
+  font-size: 1.7rem;
 }
 
 
 /*---------FOLLW-----------*/
+/*--------SEGUIDORES-------*/
 
 
 .follw {
   background-color: #202327;
   border-radius: 9px;
-  padding: 20px;
+  padding: 2.0rem;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -394,14 +386,14 @@ color: rgb(185, 180, 180);
 
 
 .follw h1 {
-  font-size: 25px;
+  font-size: 2.5rem;
   border-bottom: 1px solid var(--color-white);
-  margin-bottom: 15px
+  margin-bottom: 1.5rem;
 }
 
 
 .follw li {
-  padding: 20px;
+  padding: 2.0rem;
   border-radius: 9px;
   transition: 0.3s;
   display: flex;
@@ -418,7 +410,7 @@ color: rgb(185, 180, 180);
 .follw li a {
   display: flex;
   flex-direction: row-reverse;
-  gap: 10px;
+  gap: 1.0rem;
 }
 
 
@@ -428,11 +420,11 @@ color: rgb(185, 180, 180);
   color: black;
   cursor: pointer;
   border: none;
-  padding: 10px;
+  padding: 1.0rem;
   text-align: center;
-  height: 33px;
-  font-size: 13px;
-  border-radius: 28px;
+  height: 3.3rem;
+  font-size: 1.3rem;
+  border-radius: 2.8rem;
   transition: 0.5s;
 }
 
@@ -443,7 +435,7 @@ color: rgb(185, 180, 180);
 
 
 .img-follw {
-  width: 60px;
+  width: 6.0rem;
   border-radius: 50%;
 }
 
@@ -456,8 +448,21 @@ color: rgb(185, 180, 180);
 .follw-text h3 {
   color: rgb(231, 233, 234);
   font-family: inherit;
-  font-size: 17px;
+  font-size: 1.7rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,7 +1,11 @@
+//================Variables===================//
+
 let form = document.getElementById('form')
 let input = document.getElementById('input')
 let msg = document.getElementById('msg')
 let posts = document.getElementById('posts')
+
+//===================Event======================//
 
 form.addEventListener('submit', e => {
   e.preventDefault()
@@ -25,6 +29,8 @@ let acceptData = () => {
   createPosts()
   console.log(data)
 }
+
+//==================Functions================//
 
 function createPosts() {
   posts.innerHTML += `
