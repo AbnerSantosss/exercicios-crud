@@ -327,7 +327,7 @@ color: rgb(185, 180, 180);
 }
 
 /*---------NOTICES------------*/
-/*-----Coluna de noticias-0---*/
+/*-----Coluna de noticias----*/
 
 .notices{
   background-color: #202327;
@@ -560,14 +560,6 @@ color: rgb(185, 180, 180);
 
 
 
-#posts div {
-
-    color: white;
-  }
-
-  .options {
-    font-family: inherit;
-  }
 
  
   
