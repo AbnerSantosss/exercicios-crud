@@ -7,11 +7,13 @@
 
 > Sobre o projeto:
 > * Tecnologias usadas : HTML, CSS & JS
+> * Conceitos de flex-box
 > * ultilizada medias em rem ao inves de px
 > * Coloquei o script no topo e adicionei o defer tornando ele assincrono na leitura do html(executa só depois da leitura de todo documento)
 > * Trabalhei com o código script da tutora jully, modificando a estrutura html gerada pela DOM e a coloquei a confirmação ao deletar uma postagem!
 > * Estilizei todo html e Css em uma interface inspirada no twitter
 > * Podemos fazer uma postagem, excluir e editar(Função em desenvolvimento).
+
 
 
 
